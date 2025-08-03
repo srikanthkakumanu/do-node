@@ -10,7 +10,7 @@ Variables in JavaScript can be declared using `var`, `let`, or `const`:
 
 ## 2. Objects
 
-Objects in Javascripts are collections of key-value pairs. Objects store data as properties, where each property consists of a key and a value.
+Objects in Javascripts are unordered collections of key-value pairs. Objects store data as properties, where each property consists of a key and a value.
 
 - Objects are reference types meaning variables holding objects store a reference to the object in memory, not the object itself.
 - Objects can be created using object literals, constructors, or classes. - Properties can be accessed using dot notation or bracket notation.
@@ -41,6 +41,32 @@ In Javascript, _functions_ are first-class objects.
 Functions can be bound to a specific context using the `bind` method. This creates a new function with a specific `this` value and allows you to set initial arguments.
 
 Please note that arrow functions does not rebind `this` hence it returns the top-level function object.
+
+## 5. Typed Arrays
+
+Typed arrays was designed for handling raw binary data. Unlike standard arrays, typed arrays are array buffers of fixed length. Typed arrays store elements of fixed types like 8-bit integers or 32-bit numbers.
+
+They are fixed length, type restriction and underlying buffer. Typed arrays are not arrays but are objects.
+
+**Benefits**
+
+Typed Arrays were designed to provide an efficient way to handle binary data, unlike traditional JavaScript arrays which can hold elements of mixed data types.
+
+Typed arrays are raw memory, so JavaScript can pass them directly to any function without converting the data to another representation.
+
+Typed arrays are seriously faster than normal arrays for passing data to functions that can use raw binary data. Typed Arrays are highly suitable for:
+
+WebGL and Canvas:
+Fast graphics rendering and image processing.
+
+File APIs:
+Fast reading and writing of local files.
+
+Media APIs:
+Fast handling of audio and video data.
+
+WebSockets:
+Efficient binary data transfer over network.
 
 ## Important Commands
 
