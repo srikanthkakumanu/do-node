@@ -1,0 +1,21 @@
+{
+  "name": "do-node",
+  "version": "1.0.0",
+  "description": "Javascript, Node.js and Express.js Examples",
+  "homepage": "https://github.com/srikanthkakumanu/do-node#readme",
+  "bugs": {
+    "url": "https://github.com/srikanthkakumanu/do-node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srikanthkakumanu/do-node.git"
+  },
+  "license": "MIT",
+  "author": "Srikanth Kakumanu",
+  "type": "module",
+  "main": "node/index.js",
+  "scripts": {
+    "start": "node --watch --env-file=node/.env node/api.js"
+  }
+
+}
