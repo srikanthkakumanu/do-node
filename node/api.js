@@ -1,6 +1,6 @@
 import { createServer } from 'http';
 
-import { logger, jsonMiddleware } from '../middleware.js';
+import { logger, jsonMiddleware } from './middleware.js';
 
 import {
   getUsersHandler,
